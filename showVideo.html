@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading{
+            width: 100%;
+            display: flex;
+            /* border: 1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+        #bars {
+            width:1.7%;
+            margin-left:1%;
+            /* border: 1px solid red; */
+            display: flex;  
+        }
+        #bars svg{
+            width: 80%;
+        }
+        #Title{
+            width:10%;
+            /* border: 1px solid red; */
+            margin-right: 10%;
+            display: flex;   
+        }
+        #Title > svg{
+            width: 20%;
+            height: 100%;
+            margin-left: 10%;
+            /* border: 1px solid red; */
+        }
+        #IN{
+            font-size: small;
+            font-family: sans-serif;
+            margin-left: 2%;
+        }
+        #name{
+            margin-left: 3%;
+            margin-top: 24%;
+            font-size: large;
+            font-weight: bolder;
+            font-family:sans-serif;
+            /* border: 1px solid red; */
+        }
+        #search{
+           width: 48%;
+           /* border: 1px solid red; */
+        }
+        #search > input{
+            width: 99%;
+            height: 55%;
+            /* border: 1px solid red; */
+            margin-top: 1%;
+        }
+        #heading  button{
+            width: 100%;
+            height: 67%;
+            margin-top: 17%;
+            /* border: 1px solid red; */
+        }
+        #mic{
+            margin-right: 9%;
+            margin-left: 2%;
+            width: 2%;
+            margin-top: 0.5%;
+        }
+        #mic svg{
+            width: 70%;
+            height: 70%;
+            /* border: 1px solid red; */
+        }
+        #video{
+            width: 2%;
+        }
+        #video svg{
+            width: 80%;
+            height: 100%;
+        }
+        #menunotify{
+            /* border: 1px solid red; */
+            width: 6%;
+            display: flex;
+        }
+        #menunotify svg{
+            width: 30%;
+            height: 35%;
+            margin: auto;
+        }
+        #profile{
+            width: 2%;
+            margin-top: 0.5%;
+            margin-left: 1%;
+        }
+        #profile img{
+            width: 100%;
+            height:70%;
+            /* background-size: cover; */
+            border-radius:50px;
+        }
+        #container{
+            width: 50%;
+            height: 500px;
+            /* border: 1px solid red; */
+            margin: auto;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        #title{
+            width: 30%;
+            margin: auto;
+            display: flex;
+            /* border: 1px solid red; */
+        }
+        #title svg{
+            width: 50px;
+            height: 50px;
+            margin-top: 6%;
+            margin-right: 3%;
+        }
+        #Video{
+            margin: auto;
+            width: 60%;
+            height: 400px;
+        }
+        iframe{
+            border: 0px;
+            margin-top: 7%;
+        }
+    </style>
+</head>
+<body>
+        <div id="heading">
+        <div id="bars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/>
+            </svg>
+        </div>
+        <div id="Title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+            </svg>              
+            <div>
+                <p id="name">YouTube</p>
+            </div>
+            <p id="IN">IN</p>  
+        </div>
+        <div id="search">
+            <input type="text" id="searchTerm">
+        </div>
+        <div>
+            <button onclick="searchVideo()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+        </div>
+        <div id="mic">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+        </div>
+        <div id="video">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+            </svg>
+        </div>
+        <div id="menunotify">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 30%; height: 50%;">
+                <g class="style-scope yt-icon">
+                    <path d="M16,4v4h4V4H16z M19,7h-2V5h2V7z M16,10v4h4v-4H16z M19,13h-2v-2h2V13z M10,4v4h4V4H10z M13,7h-2V5h2V7z M10,10v4h4v-4H10z M13,13h-2v-2h2V13z M16,16v4h4v-4H16z M19,19h-2v-2h2V19z M10,16v4h4v-4H10z M13,19h-2v-2h2V19z M4,4v4h4V4H4z M7,7H5V5h2V7z M4,10 v4h4v-4H4z M7,13H5v-2h2V13z M4,16v4h4v-4H4z M7,19H5v-2h2V19z" class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+            </svg>
+        </div>
+        <div id="profile">
+            <img src="image.jpeg" alt="">
+        </div>
+        
+        </div>
+        <div id="Video">
+            
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var data = JSON.parse(localStorage.getItem("video"));
+    console.log(data);
+    let iframe = document.createElement("iframe");
+    iframe.src=`https://www.youtube.com/embed/${data}`;
+    iframe.setAttribute("allowfullscreen",true);
+    iframe.width="100%";
+    iframe.height="100%";
+    document.getElementById("Video").append(iframe);
+</script>
